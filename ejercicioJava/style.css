@@ -1,0 +1,17 @@
+.square {
+	height: 150px;
+	width: 150px;
+	transition: 1s;
+}
+
+.square.green {
+	background: green;
+}
+
+.square.red {
+	background: red;
+}
+
+.square.blue {
+	background: blue;
+}
