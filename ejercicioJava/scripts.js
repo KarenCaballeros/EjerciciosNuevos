@@ -1,16 +1,19 @@
-var Square = document.getElementById("square");
 var selColor = document.getElementById("color");
 var botonCrear = document.getElementById("crear");
 var inCantidad = document.getElementById("cantidad");
+var divContenedor = document.getElementById("contenedor");
 botonCrear.onclick = function(){
-	square.className = "square";
-	square.classList.add(selColor.value);
 	var cantidad = parseInt(inCantidad.value);
-	var cont = ""
 	for (i = 0; i < cantidad ; i++) {
-    	cont += square
+    	var square = document.createElement("div");
+		square.className = "square";
+		square.classList.add(selColor.value);
+    	// TODO ?????????
+
+    	divContenedor.appendChild(square);
+
+
     }
-   caja.innerHTML = cont
 }
 
 //<div class='square'></div>"
