@@ -1,7 +1,11 @@
 .square {
 	height: 150px;
 	width: 150px;
-	transition: 1s;
+	border: 10px solid black;
+	margin: 10px; 
+ 	
+ 	float:left;
+
 }
 
 .square.green {
