@@ -28,7 +28,8 @@ botonHisto.onclick = function(){
 	for(i = 0; i < listaNum.length; i++){
 		if(listaNum[i] <= 10){
 			fila1 += 1;
-			window.alert(fila1);}
+			//window.alert(fila1);
+		}
 		if(listaNum[i] > 10 && listaNum[i] <= 20){
 			fila2 += 1;}
 		if(listaNum[i] > 20 && listaNum[i] <= 30){
@@ -62,13 +63,13 @@ botonHisto.onclick = function(){
 	for (x = 0; x < 10; x++) { 
     	largo = 0;
     	largo = ((filas[x]) * 10);
-    	//window.alert(filas[x]);
+    	window.alert(filas[x]);
     	//window.alert(fila1);
     	//window.alert(fila2);
-    	//var fila = document.createElement("div");
-    	//fila.style.width = largo +"px";
-		//fila.style.background = "red";
-		//fila.style.height = "20px";
-		//document.body.appendChild(fila);
+    	var fila = document.createElement("div");
+    	fila.style.width = largo +"px";
+		fila.style.background = "red";
+		fila.style.height = "20px";
+		document.body.appendChild(fila);
 	}
 } 
