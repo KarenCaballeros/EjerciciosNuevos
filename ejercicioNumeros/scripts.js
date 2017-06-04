@@ -19,7 +19,8 @@ botonAgregar.onclick = function() {
 		listaNum.push(inCantidad.value);
 		numeros.innerHTML = listaNum;}
 	else{ 
-		window.alert("Ingrese un numero del 0 al 100");}	
+		window.alert("Ingrese un numero del 0 al 100");}
+	inCantidad.value = ""	
 }
 
 botonHisto.onclick = function(){
@@ -27,9 +28,7 @@ botonHisto.onclick = function(){
 	window.alert(listaNum);
 	for(i = 0; i < listaNum.length; i++){
 		if(listaNum[i] <= 10){
-			fila1 += 1;
-			//window.alert(fila1);
-		}
+			fila1 += 1;}
 		if(listaNum[i] > 10 && listaNum[i] <= 20){
 			fila2 += 1;}
 		if(listaNum[i] > 20 && listaNum[i] <= 30){
