@@ -24,42 +24,51 @@ botonAgregar.onclick = function() {
 
 botonHisto.onclick = function(){
 //	filas[0] = fila1
-	for(i in listaNum){
-		if(i <= 10){
-			fila1 += 1;}
-		else if(i > 10 && i <= 20){
+	window.alert(listaNum);
+	for(i = 0; i < listaNum.length; i++){
+		if(listaNum[i] <= 10){
+			fila1 += 1;
+			window.alert(fila1);}
+		if(listaNum[i] > 10 && listaNum[i] <= 20){
 			fila2 += 1;}
-		else if(i > 20 && i <= 30){
+		if(listaNum[i] > 20 && listaNum[i] <= 30){
 			fila3 += 1;}
-		else if(i > 30 && i <= 40){
+		if(listaNum[i] > 30 && listaNum[i] <= 40){
 			fila4 += 1;}
-		else if(i > 40 && i <= 50){
+		if(listaNum[i] > 40 && listaNum[i] <= 50){
 			fila5 += 1;}
-		else if(i > 50 && i <= 60){
+		if(listaNum[i] > 50 && listaNum[i] <= 60){
 			fila6 += 1;}
-		else if(i > 60 && i <= 70){
+		if(listaNum[i] > 60 && listaNum[i] <= 70){
 			fila7 += 1;}
-		else if(i > 70 && i <= 80){
+		if(listaNum[i] > 70 && listaNum[i] <= 80){
 			fila8 += 1;}	
-		else if(i > 80 && i <= 90){
+		if(listaNum[i] > 80 && listaNum[i] <= 90){
 			fila9 += 1;}	
-		else{
+		if(listaNum[i] > 90 && listaNum[i] <= 100){
 			fila10 += 1;}						
 	}	
-	filas[0] = fila1
-	filas[1] = fila2
-	filas[2] = fila3
-	filas[3] = fila4
-	filas[4] = fila5
+	filas[0] = fila1;
+	filas[1] = fila2;
+	filas[2] = fila3;
+	filas[3] = fila4;
+	filas[4] = fila5;
+	filas[5] = fila6;
+	filas[6] = fila7;
+	filas[7] = fila8;
+	filas[8] = fila9;
+	filas[9] = fila10;
 
-	for (x = 0; x < 11; x++) { 
+	for (x = 0; x < 10; x++) { 
     	largo = 0;
-    	largo = ((fila[x]) * 10);
-    	window.alert(fila[x]);
-    	window.alert(largo);
+    	largo = ((filas[x]) * 10);
+    	//window.alert(filas[x]);
+    	//window.alert(fila1);
+    	//window.alert(fila2);
     	//var fila = document.createElement("div");
-    	//fila.style.width = "10px";
+    	//fila.style.width = largo +"px";
 		//fila.style.background = "red";
 		//fila.style.height = "20px";
-		//document.body.appendChild(fila);}
+		//document.body.appendChild(fila);
+	}
 } 
