@@ -61,14 +61,14 @@ botonHisto.onclick = function(){
 
 	for (x = 0; x < 10; x++) { 
     	largo = 0;
-    	largo = ((filas[x]) * 50);
+    	largo = ((filas[x]) * 30);
     	//window.alert(filas[x]);
     	//window.alert(fila1);
     	//window.alert(fila2);
     	var rango = document.createElement("div");
     	rango.style.width = "70px";
 		rango.style.background = "blue";
-		rango.style.height = "50px";
+		rango.style.height = "30px";
 		//rango.style.margin = "5px";
 		rango.style.float= "left";
 		rango.style.border = "5px solid black" ;
@@ -78,7 +78,7 @@ botonHisto.onclick = function(){
     	//fila.style.float= "left";
     	fila.style.width = (70 + largo) +"px";
 		fila.style.background = "red";
-		fila.style.height = "50px";
+		fila.style.height = "30px";
 		fila.style.margin = "5px";
 		//fila.style.float= "down";
 		fila.style.border = "5px solid black" ;
