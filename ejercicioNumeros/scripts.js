@@ -14,13 +14,21 @@ var fila7 = 0;
 var fila8 = 0;
 var fila9 = 0;
 var fila10 = 0;
+inCantidad.onkeypress = function(a) {
+	if (a.which == 13) {
+		if (inCantidad.value >= 0 && inCantidad.value <=100 ) {
+		listaNum.push(inCantidad.value);
+		numeros.innerHTML = listaNum;}
+	else{window.alert("Ingrese un numero del 0 al 100");}
+	inCantidad.value = "";	
+}
+}
 botonAgregar.onclick = function() {
 	if (inCantidad.value >= 0 && inCantidad.value <=100 ) {
 		listaNum.push(inCantidad.value);
 		numeros.innerHTML = listaNum;}
-	else{ 
-		window.alert("Ingrese un numero del 0 al 100");}
-	inCantidad.value = ""	
+	else{window.alert("Ingrese un numero del 0 al 100");}
+	inCantidad.value = "";	
 }
 
 botonHisto.onclick = function(){
@@ -90,6 +98,5 @@ botonHisto.onclick = function(){
 		fila.style.border = "5px solid black" ;
 		document.body.appendChild(fila);
 	}
-} 
-
+}
 
