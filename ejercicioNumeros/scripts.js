@@ -25,7 +25,7 @@ botonAgregar.onclick = function() {
 
 botonHisto.onclick = function(){
 //	filas[0] = fila1
-	window.alert(listaNum);
+	//window.alert(listaNum);
 	for(i = 0; i < listaNum.length; i++){
 		if(listaNum[i] <= 10){
 			fila1 += 1;}
@@ -61,14 +61,29 @@ botonHisto.onclick = function(){
 
 	for (x = 0; x < 10; x++) { 
     	largo = 0;
-    	largo = ((filas[x]) * 10);
-    	window.alert(filas[x]);
+    	largo = ((filas[x]) * 50);
+    	//window.alert(filas[x]);
     	//window.alert(fila1);
     	//window.alert(fila2);
+    	var rango = document.createElement("div");
+    	rango.style.width = "70px";
+		rango.style.background = "blue";
+		rango.style.height = "50px";
+		//rango.style.margin = "5px";
+		rango.style.float= "left";
+		rango.style.border = "5px solid black" ;
+		document.body.appendChild(rango);
+
     	var fila = document.createElement("div");
-    	fila.style.width = largo +"px";
+    	//fila.style.float= "left";
+    	fila.style.width = (70 + largo) +"px";
 		fila.style.background = "red";
-		fila.style.height = "20px";
+		fila.style.height = "50px";
+		fila.style.margin = "5px";
+		//fila.style.float= "down";
+		fila.style.border = "5px solid black" ;
 		document.body.appendChild(fila);
 	}
 } 
+
+
