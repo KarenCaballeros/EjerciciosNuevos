@@ -98,5 +98,6 @@ botonHisto.onclick = function(){
 		fila.style.border = "5px solid black" ;
 		document.body.appendChild(fila);
 	}
+
 }
 
