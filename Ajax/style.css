@@ -1,5 +1,10 @@
 .result{
-	min-width: 10px;
-	height: 100%;
+	width: 100%;
+	min-height: 10px;
 	background: green;
+
+}
+
+.action{
+	text-align: center;
 }
